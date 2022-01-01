@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/enroll_CSS.css">
+</head>
+<body>
+    <script src="../js/enroll.js"></script>
+    <div class="home" >
+        <img class="background" src="../img/enroll背景.jpg" width="100%" alt="ERROR"  >
+        <div class="enroll_title">
+            <p>用户注册</p>
+        </div>
+        <form class="enroll_form" method="post" name="enroll_form">
+            <input class="enroll_form_box" type="text" placeholder="用户名" name="enroll_name"><br>
+            <input class="enroll_form_box" type="password" placeholder="请输入密码" name="enroll_password"><br>
+            <input class="enroll_form_box" type="password" placeholder="请再次输入密码" name="enroll_password2" onblur="validation_password()"><br>
+            <input class="enroll_form_box" type="text" placeholder="电话号码" name="enroll_tele"><br>
+            <input class="enroll_form_box" type="text" placeholder="邮箱" name="enroll_mail"><br>
+            <div class="enroll_form_">
+                <input type="button" value="注册" name="enroll" onclick="en()">
+            </div>
+        </form>
+        <div class="enroll_jump">
+            <a class="enroll_jump_login" href="../index.html">已有账号，返回登录</a>
+        </div>
+    </div>
+
+</body>
+</html>
