@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>脑机接口虚拟仿真实验</title>
+    <link rel="stylesheet" type="text/css" href="../css/index_CSS.css">
+</head>
+<body>
+    <script src="../js/login.js"></script>
+    <div class="home">
+        <img class="background" src="../img/首页背景2.jfif" width="100%" alt="ERROR">
+        <div class="login">
+            <span class="login_title">脑机接口虚拟仿真实验</span>
+            <span class="login_login">欢迎登陆</span>
+<!-- 登录框-->
+            <form class="login_form" name="login_form"  method="post">
+                <div class="login_form_box">
+                    <img src="../img/图标-用户.png" width=25px alt="ERROR">
+                    <input class="login_form_box_" type="text" placeholder="姓名" name="login_name">
+                </div>
+                <div class="login_form_box">
+                    <img src="../img/图标-安全隐私.png" width=25px alt="ERROR">
+                    <input class="login_form_box_" type="password" placeholder="密码" name="login_password">
+                </div>
+                <div class="login_form_login">
+                    <input  type="button" value="登录" name="login" onclick="log()">
+                </div>
+            </form>
+<!--注册、忘记密码页面跳转-->
+            <div class="login_jump">
+                <a class="login_jump_enroll" href="enroll.html">首次注册</a>
+                <a class="login_jump_forget" href="forget.html">忘记密码？</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
