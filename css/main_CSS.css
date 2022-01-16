@@ -1,0 +1,100 @@
+.exit_icon
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 200px;
+}
+.exit_icon a{
+    position: absolute;
+    z-index:2;
+    text-decoration: none;
+    background: rgba(150, 200, 250, 0.5);
+    width: 160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 幼圆;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.subheading
+{
+    position: absolute;
+    top:15%;
+    left: 10%;
+}
+.subheading_icon
+{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+}
+.subheading_icon button{
+    position: absolute;
+    z-index:2;
+    background: rgba(150, 200, 250, 0.5);
+    width: 160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 幼圆;
+    font-size: 22px;
+    font-weight: bold;
+}
+.text_icon
+{
+    position: absolute;
+    top:10%;
+    left: 25%;
+    min-height: 500px;
+    min-width: 850px;
+}
+.text_icon_inner
+{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-45%);
+    height: 450px;
+    width: 850px;
+    background: whitesmoke;
+    opacity: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+.text_icon_introduction
+{
+    display: none;
+}
+.text_icon_introduction_title
+{
+    font-family: 幼圆;
+    font-size: large;
+    font-weight: bold;
+}
+.text_icon_principle
+{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 450px;
+    width: 830px;
+}
+.text_icon_principle iframe
+{
+    height: inherit;
+    width: inherit;
+}
