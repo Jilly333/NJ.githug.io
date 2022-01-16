@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验开始</title>
+    <link rel="stylesheet" type="text/css" href="../css/startlab_CSS.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+</head>
+<body>
+<script src="../js/startlab_js.js"></script>
+    <div class="home" id="home">
+        <img class="background" src="../img/首页背景2.jfif" width="100%" alt="ERROR">
+        <img class="background2" src="../img/实验背景.jfif" alt="ERROR">
+        <div class="exit">
+            <div class="exit_icon">
+                <img src="../img/标题框2.png" width="100%" alt="ERROR">
+                <a href="../index.html">退出登录</a>
+            </div>
+            <div class="exit_icon">
+                <img src="../img/标题框2.png" width="100%" alt="ERROR">
+                <a href="../static/main.html">返回主页</a>
+            </div>
+        </div>
+
+        <div class="subheading">
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_fanshi"  onclick="unprocess()">实验范式</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_xinhao" onclick="unprocess()">信号采集</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_yuchuli" onclick="unprocess()">预处理</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_tezheng" onclick="unprocess()">特征提取</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_fenlei" onclick="unprocess()">特征分类</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_result" onclick="unprocess()">实验结果</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_report" onclick="lab_report()">实验报告</button>
+            </div>
+
+        </div>
+
+    </div>
+<!--            弹出窗口表单-->
+<div class="report" id="report">
+    <div class="report_menu">
+        <button class="report_write" onclick="report_write()">实验报告</button>
+        <button class="report_history" onclick="report_history()">提交记录</button>
+    </div>
+    <div class="report_exit">
+        <button name="report_exit" onclick="report_exit()">×</button>
+    </div>
+    <br>
+    <div id="report_write">
+        <div class="report_title">实验报告</div>
+        <br>
+        <form class="report_form" action="http://localhost:3000/report" method="post">
+            <div class="report_form_box1">
+                <span>姓名</span>
+                <input class="" type="text"  name="name">
+                &nbsp;&nbsp;&nbsp;
+                <span>学号</span>
+                <input class="" type="text"  name="number">
+            </div>
+            <div class="report_form_box1">
+                <label for="nit">学院</label>
+                <select  id="nit" name="xueyuan">
+                    <option name="zy">卓越学院</option>
+                    <option name="jsj">计算机学院</option>
+                    <option name="zdh">自动化学院</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="spe">专业</label>
+                <select  id="spe" name="zhuanye">
+                    <option name="zk">智能科学与技术</option>
+                    <option name="jsj">计算机科学与技术</option>
+                    <option name="jx">机械设计及其自动化</option>
+                </select>
+            </div>
+
+            <div class="report_form_box2">
+                <span>一、实验题目</span>
+                <br>
+                <textarea rows="10" cols="100%" name="title"></textarea>
+            </div>
+            <div class="report_form_box2">
+                <span>二、实验内容</span>
+                <br>
+                <textarea rows="10" cols="100%" name="content"></textarea>
+            </div>
+            <div class="report_form_box2">
+                <span>三、实验结果</span>
+                <br>
+                <textarea rows="10" cols="100%" name="result"></textarea>
+            </div>
+            <br>
+            <div class="report_form_box3">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;附件（选）</span>
+                <input class="" type="file"  name="document">
+            </div>
+            <br>
+            <div class="report_form_box4">
+                <input type="submit" value="提交报告">
+            </div>
+        </form>
+    </div>
+
+    <div id="report_history">
+        <br>
+        <table class="report_history_table">
+            <thead class="report_history_title">
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>学院</th>
+                <th>专业</th>
+            </tr>
+            </thead>
+           <tbody id="report_history_data">
+
+           </tbody>
+        </table>
+    </div>
+
+    <br>
+
+</div>
+
+</body>
+</html>

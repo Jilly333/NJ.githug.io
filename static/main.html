@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="../css/main_CSS.css">
+    <script src="../js/PDF/pdf.js"></script>
+    <script src="../js/PDF/pdf.worker.js"></script>
+    <script src="../js/PDF/pdfobject.js"></script>
+</head>
+<body>
+<script src="../js/main_js.js"></script>
+    <div class="home">
+        <img class="background" src="../img/首页背景2.jfif" width="100%" alt="ERROR">
+        <div class="exit_icon">
+            <img src="../img/标题框2.png" width="100%" alt="ERROR">
+            <a href="../index.html">退出登录</a>
+        </div>
+        <div class="subheading">
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_introduction"  onclick="lab_int()">实验简介</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_principle" onclick="lab_pri()">实验原理</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_content" onclick="lab_con()">实验内容</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_guide" onclick="lab_gui()">实验指导</button>
+            </div>
+            <div class="subheading_icon">
+                <img src="../img/标题框1.png" width="100%" alt="ERROR">
+                <button class="lab_start" onclick="lab_sta()">开始实验</button>
+            </div>
+        </div>
+        <div class="text_icon">
+            <img src="../img/文档底框.png" width="100%" alt="EEROR">
+            <div class="text_icon_inner" id="text_icon_inner">
+                <div class="text_icon_introduction" id="text_icon_introduction">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;脑机接口（Brain Computer Interface，BCI），
+                        指在人或动物大脑与外部设备之间创建的直接连接，实现脑与设备的信息交换。这一概念其实早已有之，但直到上世纪九十年代以后，才开始有阶段性成果出现。</p>
+                    <br>
+                    <span>
+                        <p class="text_icon_introduction_title">实验一：P300</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P300是较早发现的内源性事件相关电位成分,主要与人在从事某一任务时的认知活动。
+                            <a href="https://baike.baidu.com/item/%E4%BA%8B%E4%BB%B6%E7%9B%B8%E5%85%B3%E7%94%B5%E4%BD%8D/8338040">->详情</a>
+                        </p>
+                    </span>
+                    <br>
+                    <span>
+                        <p class="text_icon_introduction_title">实验二：运动想象</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运动想象疗法是指为了提高运动功能而进行的反复运动想象，没有任何运动输出，根据运动记忆在大脑中激活某一活动的特定区域，从而达到提高运动功能的目的。
+                            <a href="https://baike.baidu.com/item/%E8%BF%90%E5%8A%A8%E6%83%B3%E8%B1%A1%E7%96%97%E6%B3%95/2538690">->详情</a>
+                        </p>
+                    </span>
+                    <br>
+                    <span>
+                        <p class="text_icon_introduction_title">实验三：近红外</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近红外光(Near Infrared，NIR)是介于可见光(ⅥS)和中红外光(MIR)之间的电磁波，按ASTM(美国试验和材料检测协会)定义是指波长在780~2526nm范围内的电磁波，
+                            习惯上又将近红外区划分为近红外短波(780~1100nm)和近红外长波(1100~2526nm)两个区域。近红外区域是人们最早发现的非可见光区域。
+                            <a href="https://baike.so.com/doc/5331889-5567191.html">->详情</a>
+                        </p>
+                    </span>
+                    <br>
+                    <span>
+                        <p class="text_icon_introduction_title">实验四：独立成分分析</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于一些研究人员来说，独立成分分析（ICA）在某种程度上可能仍然是难点。ICA算法可以改变数据并产生“更清晰”的信号源。
+                            <a href="https://zhuanlan.zhihu.com/p/43130318">->详情</a>
+                        </p>
+                    </span>
+                    <br>
+                    <span>
+                        <p class="text_icon_introduction_title">实验五：卷积神经网络</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卷积神经网络仿造生物的视知觉（visual perception）机制构建，可以进行监督学习和非监督学习，
+                            其隐含层内的卷积核参数共享和层间连接的稀疏性使得卷积神经网络能够以较小的计算量对格点化（grid-like topology）特征。
+                            <a href="https://baike.so.com/doc/25527532-26566885.html">->详情</a>
+                        </p>
+                    </span>
+                    <br>
+                </div>
+                <div class="text_icon_principle" id="text_icon_principle">
+                    <iframe  src="../data/实验步骤.pdf"></iframe>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
